@@ -169,9 +169,9 @@
             <p>Fields marked with<span class="required"> * </span>are required</p><br>
 
           <label for="name">First Name<span class="required">*</span></label>
-          <input type="text" id="fname" name="fname" placeholder="(Enter first name)" required><br>
+          <input type="text" id="fname" name="fname" placeholder="Enter first name" required><br>
           <label for="name">Last Name<span class="required">*</span></label>
-          <input type="text" id="lname" name="lname" placeholder="(Enter last name)" required><br>
+          <input type="text" id="lname" name="lname" placeholder="Enter last name" required><br>
 
           <fieldset>
             <legend>Preferred Contact Method<span class="required">*</span></legend>
@@ -184,15 +184,26 @@
         
           </fieldset><br>
         
-            <!-- EMAIL -->
           <label for="email">Email Address<span class="required">*</span></label>
-          <input type="email" id="email" name="email" required><br>
+          <input type="email" id="email" name="email" placeholder="Enter email address" required><br>
             
-            <!-- PHONE -->
           <label for="phone">Phone Number<span class="required">*</span></label>
-          <input type="tel" id="phone" name="phone" required><br>
-          <label for="states">Choose your State:<span class="required">*</span></label>
-				<select id="states" name="states">
+          <input type="tel" id="phone" name="phone" placeholder="Enter telephone number" required><br>
+
+          <label for="destination">Destination:<span class="required">*</span></label>
+				<select id="destination" name="destination">
+					<option value="Barcelona">Barcelona</option>
+					<option value="Granada">Granada</option>
+					<option value="Ibiza">Ibiza</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Majorca">Majorca</option>
+                    <option value="Seville">Seville</option>
+                    <option value="Tenerife">Tenerife</option>
+                    <option value="Valencia">Valencia</option>
+                </select><br>
+
+            <label for="destination">Destination:<span class="required">*</span></label>
+				<select id="destination" name="destination">
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
 					<option value="AZ">Arizona</option>
