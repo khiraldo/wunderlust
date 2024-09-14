@@ -10,7 +10,12 @@
     <a href="#main" id="skip-link">skip to main content</a>
     <header>
         <h1>Wunderlust Travel</h1>
-        <img src="images/logo-S.png" alt="A yellow sun in the background with two palm trees and blue ocean waves in the foreground">
+        <picture>
+            <source media="(min-width: 1024px)" srcset="images/logo-L.png" />
+            <source media="(max-width: 780px)" srcset="images/logo-M.png" />
+            <source media="(max-width: 320px)" srcset="images/logo-S.png" />            
+            <img src="images/logo-S.png" alt="A yellow sun in the background with two palm trees and blue ocean waves in the foreground">
+        </picture>
         <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
     </header>
     <nav>
@@ -25,9 +30,24 @@
         <h2>Majorca</h2>
         <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.
         </p><br>
-        <img src="images/majorca-waves-L.png" alt="A picture of ocean waves hitting against a cliff on a sunny day"><br>
-        <img src="images/majorca-beach-L.png" alt="a picture of a beach in Majorca with turquoise blue waters. The vantage point is from the top looking down at the beach"><br>
-        <img src="images/majorca-cove-M.png" alt="a picture overlooking a cove in Majorca, facing towards the blue waters. A boat can be seen sailing away and some houses are viewed towards the left side of the image"><br>      
+        <picture>
+            <source media="(min-width: 1024px)" srcset="images/majorca-waves-L.png" />
+            <source media="(max-width: 780px)" srcset="images/majorca-waves-M.png" />
+            <source media="(max-width: 320px)" srcset="images/majorca-waves-S.png" />            
+            <img src="images/majorca-waves-S.png" alt="A picture of ocean waves hitting against a cliff on a sunny day">
+        </picture><br>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="images/majorca-beach-L.png" />
+            <source media="(max-width: 780px)" srcset="images/majorca-beach-M.png" />
+            <source media="(max-width: 320px)" srcset="images/majorca-beach-S.png" /> 
+            <img src="images/majorca-beach-S.png" alt="a picture of a beach in Majorca with turquoise blue waters. The vantage point is from the top looking down at the beach">
+        </picture><br>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="images/majorca-cove-L.png" />
+            <source media="(max-width: 780px)" srcset="images/majorca-cove-M.png" />
+            <source media="(max-width: 320px)" srcset="images/majorca-cove-S.png" /> 
+            <img src="images/majorca-cove-S.png" alt="a picture overlooking a cove in Majorca, facing towards the blue waters. A boat can be seen sailing away and some houses are viewed towards the left side of the image">
+        </picture><br>    
     </article><br>
     <main id="main">
         <figure>
