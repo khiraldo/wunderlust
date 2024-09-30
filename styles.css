@@ -96,6 +96,22 @@ table {
 	color:#000000;
   }
 
+  h1 {
+	font-size: 32px;
+  }
+
+  h2 {
+	font-size: 28px;
+  }
+
+  h3 {
+	font-size: 24px;
+  }
+
+  h4 {
+	font-size: 20px;
+  }
+
   h4, p, q, small, nav, button, form {
 	font-family: Montserrat;
   }
@@ -104,9 +120,53 @@ table {
   header{
 	background-color: var(--teal);
 	color: var(--dark-grey);
+	display: flex;
+	flex-direction: column;
+	
   }
 
+  .header-top {
+	display: flex;
+  	justify-content: space-between; 
+	margin-top: 10px;
+	margin-bottom: 20px;
+  }
+
+  .header-top img {
+	max-width: 150px; 
+    height: auto;
+
+  }
+
+  .header-top #menu-toggle {
+	width: 150px;
+  }
+
+
   /*NAVIGATION*/
+
+  #toggle {
+	display: none;
+  }
+
+  label[for="toggle"] {
+	display: block;
+	cursor: pointer;
+	background-color: var(--yellow);
+	color: var(--black);
+	padding: 1em;
+	text-align: center;
+	font-size: 0.75em;
+	font-weight: bold;
+  }
+
+  #menu-toggle ul {
+	display: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  }
+
   .sr-only {
 	position: absolute;
 	left: -10000px;
@@ -116,44 +176,30 @@ table {
 	overflow: hidden;
   }
 
-  nav {
-	display: grid;
-	grid-column-start: 1;
-	grid-column-end: -1;
- 
-  }
-  
-  nav a{
-	text-decoration:none;
-	text-align: center;
-	background-color: var(--teal);
-	color: var(--black);
-	font-weight: bold;
-	font-size: 0.75rem;
-	padding: 2rem;
-  	margin: 1rem 0;
-	
-
-	
-  }
-  nav li {
-	list-style:none;
-  }
-
-  nav label {
-	text-align: center;
-	background-color: var(--dark-grey);
-	color: var(--white);
-	font-weight: bold;
-	font-size: 0.75rem;
-	padding: 1rem;
-  	margin: 1rem 0;
-  }
-  
-  a{
+  #toggle:checked + label + ul {
 	display: block;
-	padding: 1rem;
   }
+
+  #menu-toggle ul li {
+	background-color: var(--teal);
+	margin: 0.5em 0;
+  }
+
+  #menu-toggle ul li a {
+	display: block;
+	color: var(--black);
+	text-decoration: none;
+	padding: 2em;
+	text-align: center;
+	font-size: 0.75em;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+  }
+
+/*MAIN CONTENT*/
+#main-content {
+	margin-top: 50px;
+}
 
   /*PLAN TRIP*/
   #plan {
