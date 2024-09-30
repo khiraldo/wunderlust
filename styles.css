@@ -66,6 +66,7 @@ table {
 	
   }
 
+  /*SKIP LINK*/
   #skip{
 	position: absolute;
 	left: -10000px;
@@ -81,6 +82,7 @@ table {
 	height: auto;
   }
 
+  /*BODY*/
   body{
 	font-family: var(--fonts);
 	color: var(--black);
@@ -88,6 +90,7 @@ table {
 	padding:0;
   }
 
+  /*HEADINGS*/
   h1, h2, h3 {
 	font-family: Molle;
 	color:#000000;
@@ -96,3 +99,77 @@ table {
   h4, p, q, small, nav, button, form {
 	font-family: Montserrat;
   }
+
+  /*HEADER*/
+  header{
+	background-color: var(--teal);
+	color: var(--dark-grey);
+  }
+
+  /*NAVIGATION*/
+  .sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+  }
+
+  nav {
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: -1;
+ 
+  }
+  
+  nav a{
+	text-decoration:none;
+	text-align: center;
+	background-color: var(--teal);
+	color: var(--black);
+	font-weight: bold;
+	font-size: 0.75rem;
+	padding: 2rem;
+  	margin: 1rem 0;
+	
+
+	
+  }
+  nav li {
+	list-style:none;
+  }
+
+  nav label {
+	text-align: center;
+	background-color: var(--dark-grey);
+	color: var(--white);
+	font-weight: bold;
+	font-size: 0.75rem;
+	padding: 1rem;
+  	margin: 1rem 0;
+  }
+  
+  a{
+	display: block;
+	padding: 1rem;
+  }
+
+  /*PLAN TRIP*/
+  #plan {
+	background-color: var(--yellow);
+  }
+
+  #plan img {
+	background-color: var(--teal);
+  }
+
+  /*ABOUT DESTINATION*/
+  #about {
+	background-color: var(--blue);
+  }
+
+
+  
+
+  
