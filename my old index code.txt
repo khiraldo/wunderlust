@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katherine Hiraldo">
+    <title>Wunderlust Travel</title>
+    <meta name="description" content="Discover the beauty of Majorca and other top destinations in Spain with Wunderlust Travel. We specialize in travel planning, offering expert guidance on how to get there, must-see attractions, where to stay, and the best local cuisine. Let us help you create unforgettable travel experiences!">
+
+    <!--OPEN GRAPH-->
+    <meta property="og:title" content="Wunderlust Travel"> 
+    <meta property="og:url" content="https://khiraldo.github.io/wunderlust/"> 
+    <meta property="og:description" content="Discover the beauty of Majorca and other top destinations in Spain with Wunderlust Travel. We specialize in travel planning, offering expert guidance on how to get there, must-see attractions, where to stay, and the best local cuisine. Let us help you create unforgettable travel experiences!"> 
+    <meta property="og:image" content="images/majorca-beach-M.png">
