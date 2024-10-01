@@ -248,13 +248,46 @@ article p {
 
   #plan section h4 {  
 	position: absolute;  
-	top: 50%;  
+	top: 15%;  
 	left: 50%;  
 	transform: translate(-50%, -50%);  	
 	text-align: center;
+	font-weight: bolder;
+	white-space: nowrap;
   }
 
+  /*TESTIMONIALS*/
+  #testimonials {
+	display: flex;
+	flex-direction: column;	
+	align-items:center;
+	margin-bottom: 40px;
+	padding: 10px;
+	margin-top: 15px;
+  }
 
+  #testimonials section {
+	display: flex;
+	flex-direction: column;	
+	align-items:center;
+	margin: 10px;
+  }
+
+  #testimonials img {
+	width: 50%;
+	height: 50%;
+  	
+  }
+
+  #testimonials h4 {
+	font-weight: bold;
+	margin-top: 5px;
+  }
+
+  #testimonials q {
+	font-style: italic;
+	text-align: center;
+  }
 
 
   /*ABOUT DESTINATION*/
