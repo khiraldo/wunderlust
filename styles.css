@@ -120,15 +120,17 @@ table {
 
   /*HEADER*/
   header{
-	background-color: var(--teal);
+	background-image: linear-gradient(180deg, #55BCD5, #FFFFFF);
 	color: var(--dark-grey);
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 	
   }
 
   .header-top {
 	display: flex;
+	flex-direction: row;
   	justify-content: space-between; 
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -150,7 +152,6 @@ table {
 
 
   /*NAVIGATION*/
-
   #toggle {
 	display: none;
   }
@@ -165,12 +166,15 @@ table {
 	font-size: 0.75em;
 	font-weight: bold;
   }
+  
 
   #menu-toggle ul {
 	display: none;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+	position: absolute; 
+	z-index: 10; 
   }
 
   .sr-only {
@@ -186,9 +190,15 @@ table {
 	display: block;
   }
 
+  #toggle:checked + label {
+	background-color: var(--dark-grey);
+	color:#FFFFFF;
+}
+
   #menu-toggle ul li {
 	background-color: var(--teal);
 	margin: 0.5em 0;
+	border-bottom: 1px solid black;
   }
 
   #menu-toggle ul li a {
@@ -202,26 +212,49 @@ table {
 	border-bottom: 1px solid black;
   }
 
+
 /*MAIN CONTENT*/
 #main-content {
 	margin-top: 50px;
 }
 
-article p {
-	line-height: 1;
+  /*INTRO*/
+#intro {
+	display: flex;
+	flex-direction: column;
 }
 
-#intro img {
-	margin: 3px;
-	width: 100%;
-    height: 100%;
+#img-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#img-grid img {
+    width: 100%;
+    height: 238px;
+    object-fit: cover; 
+}
+
+#img-grid picture {
+    width: 100%; 
+}
+
+#img-grid picture img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+article p {
+	line-height: 1.5;
 }
 
   /*PLAN TRIP*/
   #plan {
 	background-color: var(--yellow);
 	padding: 10px;
-	margin-top: 15px;
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;	
 	align-items:center;
@@ -260,7 +293,6 @@ article p {
   #testimonials {
 	display: flex;
 	flex-direction: column;	
-	align-items:center;
 	margin-bottom: 40px;
 	padding: 10px;
 	margin-top: 15px;
@@ -296,34 +328,34 @@ article p {
 	background-color: var(--blue);
 	margin-bottom: 25px;
 	padding: 10px;
-	display: flex;    
-	flex-direction: column;
   }
 
- #about div {  
-	display: flex;  
-	flex-direction: row;
-	flex-wrap: wrap;
-	
-  } 
+  .about-images {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1em; 
+}
 
- #about section {  
-	margin: 1px;  
-	align-items: center;
-  } 
-	
-  #about img {  
-	width: 50%;  
-	height: 50%;    
-  }  
+.about-images section {
+    flex: 1 1 calc(50% - 1em); 
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.about-images img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: contain; 
+}
+
+#about h4 {  
+	font-weight: bold; 
+  }
 
   #about h3 {
 	margin-bottom: 10px;
   }
-	
-  #about h4 {  
-	font-weight: bold; 
-  }
+
 
   /*CONTACT FORM*/
   #contact {
@@ -334,11 +366,24 @@ article p {
   #contact span:first-child {
 	font-family: Montserrat;
 	font-size: 14px;
-	font-style: italic;
-	  
+	font-style: italic;	  
+  } 
+
+  #names span {
+	color: #9B26B0;
   }
 
- 
+  legend span {
+	color: #9B26B0;
+  }
+
+  #form-bottom span {
+	color: #9B26B0;
+  }
+
+  #selects span {
+	color: #9B26B0;
+  }
 
   #contact h3 {
 	margin-bottom: 5px;
@@ -414,6 +459,7 @@ article p {
 	padding-left: 110px;
 	padding-right: 110px;
  }
+
 
  /*FOOTER*/
  footer {
