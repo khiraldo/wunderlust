@@ -508,11 +508,53 @@ article p {
 		align-items: center;  
 	   }  
 
-	   #menu-toggle ul {
-		display: flex;
-		flex-direction: row;
+		   nav { 
+		display: block; 
+		position: absolute;  
+		top: 125px; 
+		left: 45%;  
+		transform: translateX(-30%);  
+		width: 100%;  
 	   }
 
+	
+
+	  #menu-toggle ul {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+	   }
+
+	  #menu-toggle ul li {
+		background-color: var(--white);
+		margin: 0.5em 0;
+		border: none;
+	  }
+	
+	  #menu-toggle ul li a {
+		display: block;
+		color: var(--black);
+		font-weight: bold;
+		text-decoration: none;
+		padding: 2em;
+		text-align: center;
+		font-size: 0.75em;
+		border: none;
+	  }
+
+	  #menu-toggle ul li a:active {
+		background-color: #F6D64A;
+
+	  }
+
+	  #menu-toggle ul li a:hover {
+		background-color: #F6D64A;
+	  }
+
+	  header {
+		padding-bottom: 115px;
+	  }
+  
 
 	  
  }
