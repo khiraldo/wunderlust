@@ -369,20 +369,29 @@ article p {
 	font-style: italic;	  
   } 
 
+
   #names span {
 	color: #9B26B0;
+	font-size: 1.5em !important;
+	font-weight: lighter;
   }
 
   legend span {
 	color: #9B26B0;
+	font-size: 1.5em !important;
+	font-weight: lighter;
   }
 
   #form-bottom span {
 	color: #9B26B0;
+	font-size: 1.5em !important;
+	font-weight: lighter;
   }
 
   #selects span {
 	color: #9B26B0;
+	font-size: 1.5em !important;
+	font-weight: lighter;
   }
 
   #contact h3 {
@@ -478,36 +487,35 @@ article p {
 	text-decoration: none;
 	margin-top: 10px;
  }
-  /*#about {
-	background-color: var(--blue);
-	padding: 10px;
-  	margin-top: 15px;
-  	display: flex;
-	flex-direction: column;
-  	align-items: center;
-  }
 
- #about section {
-	display: flex; 
-	flex-wrap: wrap; 
-	justify-content: space-between;
-	margin-bottom: 20px;
+ /*TABLET - 768PX*/
+ @media screen and (min-width: 768px) {
+
+	  label[for="toggle"] {
+		display: none; 
+	  }
+
+	  .header-top {  
+		display: flex;  
+		justify-content: space-between;  
+		align-items: center;  
+	   }  
+		
+	   .header-bottom {  
+		display: flex;  
+		flex-direction: column;
+		justify-content: space-between;  
+		align-items: center;  
+	   }  
+
+	   #menu-toggle ul {
+		display: flex;
+		flex-direction: row;
+	   }
+
+
+	  
  }
-
-  
- 
-  #about img {
-	width: 25%;
-	height: 25%;
-	margin-bottom: 10px;
-  }
-
- /* #about section {
-	display: flex; 
-	flex-wrap: wrap; 
-	justify-content: space-between; 
-  }*/
-
 
 
   
