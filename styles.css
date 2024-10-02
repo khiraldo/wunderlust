@@ -342,6 +342,22 @@ article p {
 	margin-bottom: 5px;
   }
 
+  #contact label:not(fieldset label) {
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: bold;
+  }
+
+  fieldset legend {
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: bold;
+  }
+
+  input[type="radio"] {
+	accent-color: var(--purple);
+  }
+
   
  #names input {
 	padding: 20px;
