@@ -610,10 +610,66 @@ article p {
 		object-fit: contain; 
 	}
 
-	#about {
+	.about-images {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	#contact {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#names label {  
+		display: block;  
+		margin-bottom: 10px;  
+	  }  
+		
+	#names input {  
+		display: block;  
+		width: 80%;
+	  }
+	
+	#form-bottom label {
+		display: block;  
+		margin-bottom: 10px;
+	}
+
+	#form-bottom input {
+		display: block;  
+		width: 80%;
+
+	}
+
+	#nums fieldset {
+		display: flex;
+		flex-direction: row;
+		margin-top: 25px;
+		gap: 100px;
+	}
+
+	#selects label {
+		display: block;  
+		margin-bottom: 10px;
+	}
+
+	.custom-select select {
+		display: block;  
+		width: 95%;
+	}
+
+	#mySubmit {
+		margin-left: 410px;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: row;
+		gap: 5px;
+		font-size: 14px;
+		justify-content: center;
 	}
 
 	  
