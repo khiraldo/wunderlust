@@ -733,8 +733,10 @@ article p {
 	  }
 	 
 	  #plan-grid {
-		display: flex;
-		flex-direction: row;
+		display: grid;  
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 10px; 
+		justify-content: center;
 	}
 
 	#plan h3 {
@@ -750,12 +752,46 @@ article p {
 		justify-content: center;  
 	}
 
-	/*#testimonial-grid img {
-		width:fit-content;
-		height: fit-content;
-		object-fit:contain;
-		
-	}*/
+	#testimonials h3 {
+		margin-left: 10px;
+	}
+
+	.about-images {
+		padding: 50px;
+	}
+
+	#contact {
+		display: block;
+	}
+
+	form {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 10px; 
+		overflow: hidden;  
+
+	}
+
+	#selects {
+		max-width: 300px;
+	}
+
+	#nums {
+		max-width: 500px;
+	}
+
+	#names {
+		max-width: 300px;
+	}
+
+	#mySubmit {
+		margin-left: 85px;
+		padding: 15px;
+		width: 200px;
+	}
+
+	
+
 	
 
  }
