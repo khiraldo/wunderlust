@@ -667,9 +667,12 @@ article p {
 	footer {
 		display: flex;
 		flex-direction: row;
-		gap: 5px;
+		gap: 20px;
+		align-items: center;
 		font-size: 14px;
-		justify-content: center;
+		background-color: var(--light-grey);
+		color: #000000;
+		padding: 20px;
 	}
 
 	  
